@@ -7,6 +7,10 @@ micronaut:
         paths: classpath:public
         mapping: /static/**/*
         enabled: true
+      home:
+        paths: classpath:public
+        mapping: /
+        enabled: true
   server:
     cors:
       enabled: true
