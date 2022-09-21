@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC
+ * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,6 @@
  * limitations under the License.
  */
 
-// [START cloudrun_helloworld_service]
-// [START run_helloworld_service]
-
 package com.example.helloworld;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -28,14 +25,14 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class HelloworldApplication {
 
-  @Value("${NAME:World}")
+  @Value("${NAME:nos amis de STEF}")
   String name;
 
   @RestController
   class HelloworldController {
     @GetMapping("/")
     String hello() {
-      return "Hello " + name + "!";
+      return "Bienvenue à " + name + "!";
     }
   }
 
@@ -43,5 +40,3 @@ public class HelloworldApplication {
     SpringApplication.run(HelloworldApplication.class, args);
   }
 }
-// [END run_helloworld_service]
-// [END cloudrun_helloworld_service]
