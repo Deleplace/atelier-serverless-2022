@@ -1,0 +1,3 @@
+[[build.env]]
+name = "GOOGLE_ENTRYPOINT"
+value = "java -jar build/libs/atelier-serverless-*-all.jar"
