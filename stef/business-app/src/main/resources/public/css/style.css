@@ -1,0 +1,39 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(#FFF, #EEF, #DDF, #44F);
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    margin: 0.6em;
+}
+
+#errors {
+    margin: 0.6em;
+    border-radius: 0.5em;
+    background-color: #A44;
+    padding: 0.4em;
+    color: white;
+    font-weight: bolder;
+}
+
+.data {
+    display: flex;
+}
+
+#noms-etablissements {
+    margin: 0.5em;
+}
+
+#detail {
+    margin: 1.5em;
+}

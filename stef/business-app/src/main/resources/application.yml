@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: atelier-serverless
+  router:
+    static-resources:
+      default:
+        paths: classpath:public
+        mapping: /static/**/*
+        enabled: true
+  server:
+    cors:
+      enabled: true
+netty:
+  default:
+    allocator:
+      max-order: 3

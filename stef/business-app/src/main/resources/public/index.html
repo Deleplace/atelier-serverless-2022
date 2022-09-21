@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etablissements</title>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Etablissements</h1>
+    <i>Atelier Serverless STEF/Google Cloud</i>
+    <hr/>
+    <div class="business">
+      <div>
+        <button id="fetch-list">Voir la liste des établissements</button>
+      </div>
+      <div id="errors" class="hidden"></div>
+      <div class="data">
+        <div>
+          <select 
+            id="noms-etablissements"
+            size="20"
+            class="hidden">
+            <option>a</option>
+            <option>bcde fg</option>
+          </select>
+        </div>
+        <div id="detail" class="hidden">
+          <h2 id="etab-libelle"></h2>
+          <dl>
+            <dt>Code</dt>
+            <dd id="etab-code">a</dd>
+          </dl>
+          <dl>
+            <dt>Code société</dt>
+            <dd id="etab-code-societe">a</dd>
+          </dl>
+          <dl>
+            <dt>SIRET</dt>
+            <dd id="etab-siret">a</dd>
+          </dl>
+          <dl>
+            <dt>Téléphone</dt>
+            <dd id="etab-telephone">a</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
